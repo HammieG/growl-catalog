@@ -24,3 +24,7 @@ __pycache__/
 *.pickle
 *.fits
 *.dat
+
+# Floor's local working files (not for the public repo)
+GROWL_TF_individual_data_projects/instructions_task_force/COMPAS models for GROWL catalog.xlsx
+GROWL_TF_individual_data_projects/instructions_task_force/GROWL COMPAS models.docx
