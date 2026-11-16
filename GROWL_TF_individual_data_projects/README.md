@@ -4,8 +4,26 @@ Each GROWL Task Force member works on **one published population-synthesis datas
 lives in your own folder here, and you share it with the team by opening a **pull request (PR)**.
 A GROWL mentor reviews it and merges it into the repository.
 
-Questions go to the GROWL Discord (your dataset channel or the shared "individual projects"
-channel), not to GitHub issues.
+## Stay in touch: hands-on sessions and Discord
+
+**Please use the hands-on sessions!** They are the best place to:
+
+- **check in on the results you found**, even small or half-finished ones;
+- **show examples**: a plot, a strange column in the data file, a table you filled in;
+- **discuss the science** of your paper and your dataset with the rest of the task force.
+
+Don't wait until a step is "done" to show it. Intermediate results are exactly what we want to see,
+and nobody has looked at most of these datasets this way before, so what you find is new.
+
+**Post on Discord** (your dataset channel, or the shared "individual projects" channel):
+
+- **any questions**, about the data, the paper, the physics, git, anything. If you're stuck for
+  more than a short while, ask. Someone else probably has the same question.
+- **cool updates**: plots, surprises, things that match (or don't match) the paper. Everyone
+  would love to see them.
+
+GitHub is for submitting your work; Discord and the hands-on sessions are for talking about it.
+Please don't use GitHub issues for questions.
 
 ```
 GROWL_TF_individual_data_projects/
