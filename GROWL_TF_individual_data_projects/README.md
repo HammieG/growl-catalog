@@ -1,8 +1,9 @@
 # GROWL Task Force: individual data projects
 
-Each GROWL Task Force member works on **one published population-synthesis dataset**. Your work
-lives in your own folder here, and you share it with the team by opening a **pull request (PR)**.
-A GROWL mentor reviews it and merges it into the repository.
+Each GROWL Task Force member works on **one published population-synthesis dataset**. Every
+dataset has **one folder** here. If several people work on the same dataset, they share that
+folder and split the deliverables between them. You share your work by opening a
+**pull request (PR)**; a GROWL mentor reviews it and merges it into the repository.
 
 ## Stay in touch: hands-on sessions and Discord
 
@@ -31,23 +32,43 @@ GROWL_TF_individual_data_projects/
 ├── instructions_task_force/           <- instruction notebooks, one per step (read only, don't edit)
 │   └── step1_download_and_investigate_data.ipynb
 └── individual_project_folders/
-    └── <dataset>_<n>__<YourName>/     <- YOUR folder, e.g. Broekgaarden22_1__Joseph
-        ├── README.md                  <- your notes: the main file of your project
-        ├── step1_<dataset>_<YourName>.ipynb
+    └── <dataset>/                     <- one folder per DATASET, e.g. broekgaarden-2022-dcorates
+        ├── README.md                  <- shared notes: the main file of the project
+        ├── step1_<YourName>.ipynb     <- each person's own copy of the instructions
         ├── download_instructions.txt  <- deliverable of step 1 (Task C)
-        ├── metadata_<dataset>.csv     <- deliverable of step 1 (Task E)
+        ├── <metadata file>            <- deliverable of step 1 (Task E; format to be announced)
         └── figures/                   <- optional: small PNGs you refer to in README.md
 ```
+
+## Dataset names
+
+The folder name is the **dataset name** used everywhere in GROWL (folders on the data server,
+this repository, the catalog). It is all lowercase:
+
+```
+<first author>-<4-digit year>-<short tag>        e.g. vanson-2022-nopeaks, riley-2021-che
+```
+
+Only letters, digits and hyphens. For a new dataset you **propose** the name (and the submodel
+folder names) in your checklist issue, and a mentor **confirms** it before you create any folders.
+
+## Working together on one dataset
+
+- Each deliverable has **one owner**: the checklist issue for your dataset says who does what.
+  Only edit files you own, so you don't overwrite each other's work (or get merge conflicts).
+- Everyone writes in the shared `README.md`. Start your entries with your name and the date, e.g.
+  `### 2026-11-20 (Joseph)`.
+- Everyone keeps their own notebook, `step1_<YourName>.ipynb`.
 
 ---
 
 ## The three rules
 
-1. **Only change files inside your own folder.** If you think something outside it should change
-   (an instruction notebook, this README), ask on Discord.
+1. **Only change files inside your dataset's folder.** If you think something outside it should
+   change (an instruction notebook, this README), ask on Discord.
 2. **Never upload data.** No `.h5` / `.hdf5` files, no `.zip` / `.tar.gz` archives, no large
-   tables. The data stays on the GROWL server and on your own machine; your notebook points at it
-   through the `PATH` dictionary from Task B. An automatic check rejects data files and any file
+   tables. The data stays on your own machine (later: the GROWL server); your notebook points at
+   it through the `PATH` dictionary from Task B. An automatic check rejects data files and any file
    larger than 10 MB.
 3. **Every change goes through a pull request.** Nobody pushes directly to `main`. That is not
    because we don't trust you: it gives a mentor a chance to see your work and comment on it.
@@ -58,10 +79,10 @@ GROWL_TF_individual_data_projects/
 
 | File | What it is | When |
 |---|---|---|
-| `README.md` | **Your notes.** This is the main file of your project. Write down what you did, what you found, what was unclear, and questions for the team. Keep adding to it; dated entries work well (`### 2026-11-20`). | Always |
-| `step1_<dataset>_<YourName>.ipynb` | Your copy of the instruction notebook, with the tasks filled in. | Step 1 |
-| `download_instructions.txt` | The exact recipe to download your data (Task C): links, the commands you typed, checksums, difficulties. Someone else must be able to follow it literally. | Step 1 |
-| `metadata_<dataset>.csv` | The filled-in metadata table (Task E). | Step 1 |
+| `README.md` | **Shared notes.** This is the main file of the project. Write down what you did, what you found, what was unclear, and questions for the team. Keep adding to it, with your name and the date on each entry (`### 2026-11-20 (Joseph)`). | Always |
+| `step1_<YourName>.ipynb` | Your copy of the instruction notebook, with the tasks filled in. | Step 1 |
+| `download_instructions.txt` | The exact recipe to download the data (Task C): links, the commands you typed, difficulties. Someone else must be able to follow it literally. | Step 1 |
+| *metadata file* | The filled-in metadata table (Task E). The exact format will be announced. | Step 1 |
 | `figures/*.png` | Small plots you want to show in your `README.md`. | Optional |
 
 More deliverables will be added as the next steps are released.
@@ -80,7 +101,7 @@ request. Choose whichever route you're comfortable with.
 ### Route A: in the browser (no git needed)
 
 1. Go to your folder on GitHub:
-   `https://github.com/growl-lab/growl-catalog/tree/main/GROWL_TF_individual_data_projects/individual_project_folders/`
+   `https://github.com/growl-lab/growl-catalog/tree/main/GROWL_TF_individual_data_projects/individual_project_folders/<dataset>/`
 2. **To upload files:** click **Add file → Upload files**, drag your files in.
    **To edit your README:** open `README.md`, click the pencil icon.
 3. At the bottom, choose **"Create a new branch for this commit and start a pull request"**. Give
@@ -103,7 +124,7 @@ git switch main
 git pull                                      # get everyone else's latest work
 git switch -c <YourName>/<what>               # e.g. Joseph/step1-download
 # ... work in your folder ...
-git add GROWL_TF_individual_data_projects/individual_project_folders/<your folder>
+git add GROWL_TF_individual_data_projects/individual_project_folders/<dataset>
 git status                                    # check: only your folder, no data files
 git commit -m "<dataset>: <what you did>"
 git push -u origin <YourName>/<what>

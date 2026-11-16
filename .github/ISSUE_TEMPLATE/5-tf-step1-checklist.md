@@ -6,8 +6,8 @@ labels: ["task force", "step 1"]
 ---
 
 **Dataset:** <dataset name>
-**Folder:** `GROWL_TF_individual_data_projects/individual_project_folders/<folder>/`
-**Team:** @student1, @student2
+**Folder:** `GROWL_TF_individual_data_projects/individual_project_folders/<dataset name>/`
+**Team:** <@github-name-1>, <@github-name-2>
 **Instructions:** `GROWL_TF_individual_data_projects/instructions_task_force/step1_download_and_investigate_data.ipynb`
 
 Tick a box when it's done (no pull request needed for ticking). Put the GitHub name of whoever
@@ -15,7 +15,7 @@ owns an item after it, e.g. `(@joseph)`, so it's clear who does what. Questions 
 on Discord, and bring what you find to the hands-on sessions.
 
 ### 0. Names (do this first)
-- [ ] Proposed the **dataset name**, and checked the GROWL server for an existing folder (if there is one, use that name)
+- [ ] Proposed the **dataset name** (lowercase `<first author>-<yyyy>-<tag>`, e.g. `vanson-2022-nopeaks`), and checked `individual_project_folders/` for an existing folder (if there is one, use that name)
 - [ ] Proposed the **submodel folder names** (as close as possible to the download names) and **short labels** for plots
 - [ ] Names **confirmed by a mentor** in this issue, before downloading, creating or renaming any folders
 
