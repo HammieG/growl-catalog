@@ -1,10 +1,17 @@
-# Every pull request needs approval from one maintainer.
-# Requires branch protection on main with "Require review from Code Owners" turned on.
+# Who must approve a pull request (when the ruleset on main has
+# "Require review from Code Owners" turned on). The last matching line wins.
+#
+# A team listed here must have write access to this repository, otherwise
+# GitHub silently ignores the line. growl-admin-individual-projects has admin
+# access to growl-catalog; growl-admin currently has no access to this repo.
 
-*                     @growl-lab/maintainers
+# Default: everything
+*                                     @growl-lab/growl-admin-individual-projects
 
-# Infrastructure changes (schema, validator, workflows, templates) need a maintainer too,
-# listed separately so you can later narrow this to specific people.
-/schema/              @growl-lab/maintainers
-/scripts/             @growl-lab/maintainers
-/.github/             @growl-lab/maintainers
+# GROWL task force: student project folders and instructions
+/GROWL_TF_individual_data_projects/   @growl-lab/growl-admin-individual-projects
+
+# Infrastructure (schema, validator, workflows, templates, this file)
+/schema/                              @growl-lab/growl-admin-individual-projects
+/scripts/                             @growl-lab/growl-admin-individual-projects
+/.github/                             @growl-lab/growl-admin-individual-projects

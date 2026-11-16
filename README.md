@@ -14,7 +14,11 @@ simulations/
     README.md           short human-readable summary
 schema/                 JSON Schema every metadata.yaml must satisfy
 scripts/                validation and helper scripts
+GROWL_TF_individual_data_projects/
+                        GROWL Task Force working folders, one per member + dataset
 ```
+
+**GROWL Task Force members:** see [GROWL_TF_individual_data_projects/README.md](GROWL_TF_individual_data_projects/README.md) for how to submit your work.
 
 ## Contributing
 
