@@ -10,6 +10,18 @@
 | 💻 **Simulation code** | COMPAS v02.19.04 (from the file's `Details` group and the paper) |
 | 🔗 **Related dataset** | [`vanson-2023-sfrd`](../vanson-2023-sfrd/) (Zenodo 7612755, the tutorial file): a **different** simulation, see below |
 
+## Project log (Floor)
+
+*Assignments and changes to this project, kept by Floor. Students: please write in **Notes** below.*
+
+- **2026-10-27**: Gave this dataset to Mike Steele, with a Task 0: check whether this Zenodo release
+  (5544170) and the tutorial file (Zenodo 7612755) are the same simulation.
+- **2026-11-05**: Mike's Task 0 showed they are different simulations. Assigned this dataset
+  (Zenodo 5544170) to **Tanmoy Bhowmik**; Mike continued with Zenodo 7612755
+  ([`vanson-2023-sfrd`](../vanson-2023-sfrd/)).
+- **2026-11-16**: Moved the project to growl-catalog; folder renamed from
+  `vanSon22weightyMatter_2__Tanmoy_Bhowmik`.
+
 ---
 
 ## What we already know: Mike Steele's Task 0 (November 2026)
