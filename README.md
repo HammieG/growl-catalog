@@ -25,6 +25,10 @@ in this repository.
 
 ## Contributing
 
+Contributors are members of the GROWL Task Force. They have completed the GW Paleontology
+Bootcamp and were then assigned an individual project: a published dataset that they bring into
+the catalog. Each contributor has either completed this process or is actively working through it.
+
 GROWL Task Force members: see
 [GROWL_TF_individual_data_projects/README.md](GROWL_TF_individual_data_projects/README.md).
 
