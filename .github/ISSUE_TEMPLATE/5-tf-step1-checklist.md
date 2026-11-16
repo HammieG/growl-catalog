@@ -36,7 +36,7 @@ on Discord, and bring what you find to the hands-on sessions.
 ### D–E. Paper and methods
 - [ ] Paper goal, findings and DCO types summarised in `README.md`, in our own words
 - [ ] Figures we can **compare with the data** listed (formation efficiency, number of systems, or rates in Gpc⁻³ yr⁻¹); other figures skipped
-- [ ] Metadata table filled in (tier 1: code version, ZAMS mass range, IMF, mass ratio distribution, metallicities), each entry with **where in the paper** it comes from
+- [ ] `metadata.csv` filled in (tier 1: code version, ZAMS mass range, IMF, mass ratio distribution, metallicities), each entry with **where in the paper** it comes from
 - [ ] Every entry checked by a person against the paper (LLM suggestions verified)
 
 ### F. The data file

@@ -36,7 +36,7 @@ GROWL_TF_individual_data_projects/
         ├── README.md                  <- shared notes: the main file of the project
         ├── step1_<YourName>.ipynb     <- each person's own copy of the instructions
         ├── download_instructions.txt  <- deliverable of step 1 (Task C)
-        ├── <metadata file>            <- deliverable of step 1 (Task E; format to be announced)
+        ├── metadata.csv               <- deliverable of step 1 (Task E)
         └── figures/                   <- optional: small PNGs you refer to in README.md
 ```
 
@@ -82,10 +82,29 @@ folder names) in your checklist issue, and a mentor **confirms** it before you c
 | `README.md` | **Shared notes.** This is the main file of the project. Write down what you did, what you found, what was unclear, and questions for the team. Keep adding to it, with your name and the date on each entry (`### 2026-11-20 (Joseph)`). | Always |
 | `step1_<YourName>.ipynb` | Your copy of the instruction notebook, with the tasks filled in. | Step 1 |
 | `download_instructions.txt` | The exact recipe to download the data (Task C): links, the commands you typed, difficulties. Someone else must be able to follow it literally. | Step 1 |
-| *metadata file* | The filled-in metadata table (Task E). The exact format will be announced. | Step 1 |
+| `metadata.csv` | The metadata table (Task E), **checked by a person against the paper**. See below. | Step 1 |
 | `figures/*.png` | Small plots you want to show in your `README.md`. | Optional |
 
 More deliverables will be added as the next steps are released.
+
+### `metadata.csv`
+
+> 🚧 **Draft.** The columns will change soon: we are aligning this file with the GROWL metadata
+> table that Julia is building (an older version is at
+> [julia-haynes.github.io/Popsynth-Metadata-LLM-Table](https://julia-haynes.github.io/Popsynth-Metadata-LLM-Table/);
+> ping Julia on Discord for the current interactive version). Your folder will then get a
+> `metadata.csv` with the values already filled in by an AI model, for you to check.
+
+Until then, start from
+[`instructions_task_force/metadata_template.csv`](instructions_task_force/metadata_template.csv):
+one row per parameter (and per submodel, if the value differs between submodels). The columns
+that matter most:
+
+| Column | What to write |
+|---|---|
+| `source_in_paper` | **Where** the value is stated: section, table, equation or figure. No source, no value. |
+| `status` | `llm` (not checked yet), `verified` (checked, correct) or `corrected` (checked, was wrong) |
+| `verified_by` | Your name |
 
 **Notebooks:** before committing, make sure your notebook isn't huge (a few MB at most). If it has
 many large plots, clear those outputs (*Edit → Clear Outputs of All Cells* in Jupyter, or for one cell)
