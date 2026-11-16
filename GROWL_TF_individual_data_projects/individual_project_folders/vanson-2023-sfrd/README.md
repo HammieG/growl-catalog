@@ -11,6 +11,20 @@ handed it off; his results so far are below.
 | 💻 **Simulation code** | COMPAS v02.26.03, according to the Zenodo record and the 2023 paper; **cannot be verified from the file** (no `Details` / `Run_Details` group) |
 | 🔗 **Related dataset** | [`vanson-2022-weightymatter`](../vanson-2022-weightymatter/) (Zenodo 5544170): a **different** simulation, see below |
 
+## Project log (Floor)
+
+*Assignments and changes to this project, kept by Floor. Students: please write in **Notes** below.*
+
+- **2026-10-27**: Gave Mike Steele the van Son et al. (2022) "weighty matter" dataset, with a
+  Task 0: check whether its Zenodo release (5544170) and the tutorial file (Zenodo 7612755) are the
+  same simulation.
+- **2026-11-05**: Mike's Task 0 showed they are **different simulations**. Mike's dataset became
+  Zenodo 7612755 (this one, released with van Son et al. 2023); Zenodo 5544170 went to Tanmoy
+  ([`vanson-2022-weightymatter`](../vanson-2022-weightymatter/)).
+- **2026-11-16**: Moved the project to growl-catalog; folder renamed from
+  `vanSon22weightyMatter_1__Mike_Steele`. Mike handed the dataset off (see below); **new student to
+  be assigned**.
+
 In Mike's notes, "2022a" means van Son et al. (2022), *The redshift evolution of the binary black
 hole merger rate: a weighty matter*, ApJ 931, 17 (the paper behind Zenodo 5544170).
 
