@@ -15,7 +15,7 @@ github.com/growl-lab/
 │
 ├── .github/                    Org profile page (README shown on github.com/growl-lab)
 │
-├── growl-catalog/              THE CATALOG: one folder per study, plus the bootcamp
+├── growl-catalog/              THE CATALOG: one folder per study
 │   ├── README.md
 │   ├── CONTRIBUTING.md         this file
 │   ├── schema/
@@ -31,11 +31,10 @@ github.com/growl-lab/
 │   │       ├── results.yaml        steps 4-6: key numbers (efficiencies, rates)
 │   │       ├── notebooks/          one notebook per step (02-06)
 │   │       └── figures/            small PNGs used in the README
-│   ├── tutorials/              GW Paleontology Bootcamp notebooks
 │   └── .github/
-│       ├── workflows/validate.yml  automatic check on every pull request
+│       ├── workflows/validate-metadata.yml  automatic check on every pull request
 │       ├── ISSUE_TEMPLATE/         "new catalog entry" form
-│       └── PULL_REQUEST_TEMPLATE.md
+│       └── pull_request_template.md
 │
 └── growl-tools/                THE CODE: pip-installable Python package
     ├── src/growl_tools/
@@ -45,6 +44,8 @@ github.com/growl-lab/
     │   ├── cosmic_integration.py   S(Z,z) weighting, merger rate vs redshift
     │   └── properties.py           mass, mass-ratio, delay-time distributions     [planned]
     ├── tests/
+    ├── tutorials/              GW Paleontology Bootcamp notebooks (use growl_tools)
+    ├── lvk_observations/       observed LVK rates and mass distributions, e.g. GWTC-5 extract
     └── pyproject.toml
 ```
 
