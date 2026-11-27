@@ -18,8 +18,6 @@
 
 ### 2026-11-26 (Hamza Ghani)
 
-### 2026-11-26 (Hamza Ghani)
-
 I downloaded the updated `step1_Hamza.ipynb` from the GROWL catalog project folder and inspected the local Riley et al. (2021) `COMPAS_Output.h5` file without loading the full datasets into memory. The archive checksum matches the Zenodo checksum (`bf25e5083efbe36cd4048797db88531b`). The file contains four groups: `CommonEnvelopes`, `DoubleCompactObjects`, `Supernovae`, and `SystemParameters`; it does not contain a `Run_Details` group. The system-parameter group has 12,000,000 rows, and the `SEED` values are unique from 0 through 11,999,999. The `WR_Multiplier` column has four equally sized values (`0.0`, `0.2`, `0.6`, and `1.0`), with 3,000,000 rows for each value. The two ZAMS metallicity columns contain 30 discrete values from 0.0001 to 0.01496236, with 400,000 rows at each value. The file has 291,253 double-compact-object rows and no obvious weight column.
 
 The complete group/column listing, including data types and row counts, is in `metadata_headers.csv`. The local data files remain outside this submission folder and are not being uploaded.
